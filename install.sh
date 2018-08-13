@@ -10,4 +10,10 @@ FILE2=$(ls /etc/vim/vimrc)
 if [ $? -eq 0 ]; then
   sudo cp -v vimrc $FILE2
 fi
-
+DIRS=$(cat dirs.txt)
+for DIR in $DIRS; do
+  if [ "$DIR" == "vim-pathogen" ]; then
+    sudo cp -vr $DIR/autoload /etc/vim/
+  fi
+  sudo cp -vr $DIR /etc/vim/bundle
+done

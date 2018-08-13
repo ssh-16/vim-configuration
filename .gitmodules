@@ -64,3 +64,6 @@
 [submodule "YouCompleteMe"]
 	path = YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe.git
+[submodule "command-t"]
+	path = command-t
+	url = git://git.wincent.com/command-t.git
