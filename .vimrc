@@ -116,3 +116,5 @@ set report=0
 set fillchars=vert:\ ,stl:\ ,stlnc:\
 
 au BufRead,BufNewFile * setfiletype txt
+
+set cino=N-s
