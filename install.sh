@@ -15,5 +15,6 @@ for DIR in $DIRS; do
   if [ "$DIR" == "vim-pathogen" ]; then
     sudo cp -vr $DIR/autoload /etc/vim/
   fi
+  sudo mkdir -p /etc/vim/bundle
   sudo cp -vr $DIR /etc/vim/bundle
 done
